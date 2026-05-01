@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Editor from '@monaco-editor/react';
-import * as Y from 'yjs';
+import * as Y from 'Y.js';
 import { SocketIOProvider } from 'y-socket.io';
 import { MonacoBinding } from 'y-monaco';
 import { Users, Copy, Check, ChevronDown, Activity, Code2, ShieldAlert } from 'lucide-react';
@@ -27,7 +27,7 @@ export default function EditorRoom() {
     const ydoc = new Y.Doc();
     docRef.current = ydoc;
 
-    const provider = new SocketIOProvider('http://localhost:3001', roomId, ydoc, {
+    const provider = new SocketIOProvider('https://code-editor-backend-nb4w.onrender.com', roomId, ydoc, {
       autoConnect: true
     });
     providerRef.current = provider;
