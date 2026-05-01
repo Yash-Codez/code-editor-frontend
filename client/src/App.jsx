@@ -39,8 +39,7 @@ function Home() {
             </span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
-            {/* <a href="#" className="hover:text-red-400 transition-colors">Features</a>
-            <a href="#" className="hover:text-red-400 transition-colors">Documentation</a> */}
+           
             <a href="https://github.com/Yash-Codez/code-editor-frontend" className="hover:text-red-400 transition-colors">GitHub</a>
           </div>
         </nav>
