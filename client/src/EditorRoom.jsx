@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Editor from '@monaco-editor/react';
-import * as Y from 'Y.js';
+import * as Y from 'yjs';
 import { SocketIOProvider } from 'y-socket.io';
 import { MonacoBinding } from 'y-monaco';
 import { Users, Copy, Check, ChevronDown, Activity, Code2, ShieldAlert } from 'lucide-react';
